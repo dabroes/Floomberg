@@ -36,6 +36,7 @@ Floomberg
 .gitattributes
 Floomberg.sln
 
+
 - Run Visual Studio 2012 as admin.  (This is necessary because the first compilation of Bemu does a some kind of COM install.)
 
 - Open Floomberg.sln and compile.
