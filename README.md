@@ -22,18 +22,28 @@ Getting Started
 - Unzip the BEmu folder at the same level as the Floomberg.sln file.  Your directory structure should look like this:
 
 BEmu  <-- Folder you unzipped from the download
+
 |_bin
+
 |_BloombergTypes
+
 |_HistoricDataRequest
+
 |_(etc.)
   
 Floomberg
+
 |_bin
+
 |_obj
+
 |_Examples.fsproj
+
 |_SendRequestExample.fs
+
   
 .gitattributes
+
 Floomberg.sln
 
 
