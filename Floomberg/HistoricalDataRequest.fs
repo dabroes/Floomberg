@@ -108,9 +108,9 @@ let SendRequestExample() =
 
     readResults()
 
-[<EntryPoint>]
-let main args =
-    SendRequestExample()
-    Console.WriteLine("Press a key")
-    Console.ReadKey(true) |> ignore
-    0
+//[<EntryPoint>]
+//let main args =
+//    SendRequestExample()
+//    Console.WriteLine("Press a key")
+//    Console.ReadKey(true) |> ignore
+//    0
