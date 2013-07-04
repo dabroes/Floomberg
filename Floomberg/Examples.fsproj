@@ -41,7 +41,7 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SendRequestExample.fs" />
+    <Compile Include="HistoricalDataRequest.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BEmu\BEmu.csproj">

@@ -1,7 +1,10 @@
 ﻿module Demo
 
+// Based on HistoricalDataRequest.cs from BEmu's Examples project
+
 open System
 open BEmu
+//open Bloomberglp.Blpapi //un-comment this line to use the actual Bloomberg API
 
 let HandleResponseEvent (eventObj : Event) =
     printfn "EventType = %s" (eventObj.Type.ToString())
@@ -39,16 +42,16 @@ let HandleOtherEvent (eventObj : Event) =
                 )
 
 let SendRequestExample() =
-    let identifier = "//blp/refdata"
-    let requestName = "HistoricalDataRequest"
+    let uri = "//blp/refdata"
+    let operationName = "HistoricalDataRequest"
     let sessionOptions = new SessionOptions(ServerHost = "127.0.0.1", ServerPort = 8194)
     let session = new Session(sessionOptions)
 
     session.Start() |> ignore
-    session.OpenService(identifier) |> ignore
+    session.OpenService(uri) |> ignore
 
-    let service = session.GetService(identifier)
-    let request = service.CreateRequest(requestName)
+    let service = session.GetService(uri)
+    let request = service.CreateRequest(operationName)
 
     request.Append("securities", "IBM US EQUITY")
     request.Append("securities", "SPY US EQUITY")
