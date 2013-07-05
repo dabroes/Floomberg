@@ -108,10 +108,10 @@ let IntradayBarDataRequestExample() =
 
         ReadResults()
 
-[<EntryPoint>]
-let main args =
-    IntradayBarDataRequestExample()
-    Console.WriteLine("Press a key")
-    Console.ReadKey(true) |> ignore
-    0
+//[<EntryPoint>]
+//let main args =
+//    IntradayBarDataRequestExample()
+//    Console.WriteLine("Press a key")
+//    Console.ReadKey(true) |> ignore
+//    0
     

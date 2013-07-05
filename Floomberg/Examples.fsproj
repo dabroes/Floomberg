@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="HistoricalDataRequest.fs" />
     <Compile Include="IntradayBarDataRequest.fs" />
+    <Compile Include="IntraDayTickRequest.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BEmu\BEmu.csproj">
