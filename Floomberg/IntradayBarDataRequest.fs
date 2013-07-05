@@ -42,7 +42,7 @@ let ProcessResponse (event : Event) (security : string) =
             printfn ""
     )
 
-let IntradayBarDataRequestExample() =
+let RunExample() =
 
     let uri = "//blp/refdata"
     let operationName = "IntradayBarRequest"
@@ -108,10 +108,4 @@ let IntradayBarDataRequestExample() =
 
         ReadResults()
 
-//[<EntryPoint>]
-//let main args =
-//    IntradayBarDataRequestExample()
-//    Console.WriteLine("Press a key")
-//    Console.ReadKey(true) |> ignore
-//    0
     

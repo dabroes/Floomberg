@@ -27,7 +27,7 @@ let ProcessResponse (event : Event) (security : string) =
             printfn "%s" (String.Format("{0:HH:mm:ss}: {1}, {2} @ {3}", time, type', size, value))
     )
 
-let IntradayTickRequestExample() =
+let RunExample() =
 
     let uri = "//blp/refdata"
     let operationName = "IntradayTickRequest"
@@ -105,10 +105,5 @@ let IntradayTickRequestExample() =
 
         ReadResults()
 
-[<EntryPoint>]
-let main args =
-    IntradayTickRequestExample()
-    Console.WriteLine("Press a key")
-    Console.ReadKey(true) |> ignore
-    0
+
     

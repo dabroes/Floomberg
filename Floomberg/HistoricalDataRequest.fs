@@ -1,4 +1,4 @@
-﻿module Demo
+﻿module HistoricalDataRequest
 
 // Based on HistoricalDataRequest.cs from BEmu's Examples project
 
@@ -41,7 +41,7 @@ let HandleOtherEvent (eventObj : Event) =
                               printfn "Terminating: %A" m.MessageType
                 )
 
-let SendRequestExample() =
+let RunExample() =
     let uri = "//blp/refdata"
     let operationName = "HistoricalDataRequest"
     let sessionOptions = new SessionOptions(ServerHost = "127.0.0.1", ServerPort = 8194)
@@ -107,10 +107,3 @@ let SendRequestExample() =
             readResults()
 
     readResults()
-
-//[<EntryPoint>]
-//let main args =
-//    SendRequestExample()
-//    Console.WriteLine("Press a key")
-//    Console.ReadKey(true) |> ignore
-//    0
